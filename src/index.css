@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-slate-200;
+}
+
+body::-webkit-scrollbar,
+*[class*='overflow-y-auto']::-webkit-scrollbar {
+	@apply h-3 w-3;
+}
+
+body::-webkit-scrollbar-thumb {
+	@apply rounded-lg bg-gradient-to-b from-fuchsia-400 to-indigo-800;
+}
+
+body::-webkit-scrollbar-track,
+*[class*='overflow-y-auto']::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
